@@ -114,7 +114,7 @@ body {
   margin-top: 25px;
   margin-bottom: 25px; }
   .quick-buy .btn-buy {
-    background: #EABF49;
+    background: #8B8B8B;
     width: 250px;
     height: 50px;
     border: none;
@@ -131,20 +131,12 @@ body {
       line-height: 14px;
       text-align: center;
       text-transform: uppercase;
-      color: #353535;
+      color: #ffffff;
       margin: 10px 55px; }
     .quick-buy .btn-buy:hover {
-      background: #3EB83D;
       border: none;
       -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
       box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25); }
-      .quick-buy .btn-buy:hover p {
-        color: #FFFFFF; }
-    .quick-buy .btn-buy:active {
-      background: #215026;
-      border: none; }
-      .quick-buy .btn-buy:active p {
-        color: #FFFFFF; }
 
 .order-choice h2 {
   font-family: Roboto;
@@ -202,6 +194,8 @@ body {
     margin: 25px 0 0 0; }
   #courier-tab:hover {
     border: 2px solid #3EB83D;
+    -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
 
@@ -236,9 +230,10 @@ body {
     font-weight: normal;
     font-size: 14px;
     line-height: 16px;
+    margin-top: 8px;
     color: #8B8B8B; }
   .courier-info .courier-flat {
-    margin-right: 95px; }
+    margin-right: 117px; }
     .courier-info .courier-flat label {
       font-family: Roboto;
       font-style: normal;
@@ -254,22 +249,33 @@ body {
       font-size: 14px;
       line-height: 16px;
       color: rgba(139, 139, 139, 0.65); }
-  .courier-info .courier-date label,
-  .courier-info .courier-time label {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    color: #000000; }
-  .courier-info .courier-date input,
-  .courier-info .courier-time input {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    color: #9B9A9A; }
+  .courier-info .courier-date,
+  .courier-info .courier-time {
+    padding-right: 0; }
+    .courier-info .courier-date label,
+    .courier-info .courier-time label {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      color: #000000; }
+    .courier-info .courier-date input,
+    .courier-info .courier-time input {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      color: #9B9A9A; }
+    .courier-info .courier-date .option-time,
+    .courier-info .courier-time .option-time {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      color: #9B9A9A; }
   .courier-info .courier-comment {
     width: 646px;
     height: 105px; }
@@ -316,6 +322,8 @@ body {
     margin: 25px 0 0 0; }
   #point-tab:hover {
     border: 2px solid #3EB83D;
+    -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
 
@@ -362,6 +370,8 @@ body {
     margin: 25px 0 0 0; }
   #pickup-tab:hover {
     border: 2px solid #3EB83D;
+    -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
 
@@ -485,7 +495,7 @@ body {
   margin-top: 25px;
   margin-bottom: 25px; }
   .long-buy .btn-buy {
-    background: #EABF49;
+    background: #8B8B8B;
     width: 250px;
     height: 50px;
     border: none;
@@ -502,19 +512,12 @@ body {
       line-height: 14px;
       text-align: center;
       text-transform: uppercase;
-      color: #353535;
+      color: #FFFFFF;
       margin: 10px 45px; }
     .long-buy .btn-buy:hover {
-      background: #3EB83D;
-      border: none;
       -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
       box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25); }
       .long-buy .btn-buy:hover p {
-        color: #FFFFFF; }
-    .long-buy .btn-buy:active {
-      background: #215026;
-      border: none; }
-      .long-buy .btn-buy:active p {
         color: #FFFFFF; }
 
 @media (min-width: 770px) and (max-width: 1299px) {
