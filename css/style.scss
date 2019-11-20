@@ -712,3 +712,55 @@ body {
     }
   }
 }
+
+
+@media (min-width: 770px) and (max-width: 1299px) {
+
+  #pickup-tab,
+  #point-tab {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .courier-info .courier-date input,
+  .courier-info .courier-time input {
+    width: 180px;
+  }
+
+
+  .courier-info .courier-date label,
+  .courier-info .courier-time label {
+    width: 140px;
+  }
+
+  .courier-info .courier-date input,
+  .courier-info .courier-time input #pickup .pickup-date input {
+    width: 180px;
+  }
+
+
+  #pickup .text-under-list {
+    margin: 30px 0 0 0;
+  }
+
+  #pickup .point-adress {
+    margin: 100px 0 0 0;
+  }
+
+  #pickup .long-buy {
+    margin-top: 500px;
+  }
+
+  #point .point-h h4:last-child {
+    position: absolute;
+    margin: 460px 0 0 0;
+  }
+
+  #point .point-adress {
+    margin: 100px 0 0 0;
+  }
+
+  #point .long-buy {
+    margin-top: 500px;
+  }
+}
