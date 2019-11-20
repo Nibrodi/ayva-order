@@ -1,0 +1,518 @@
+body {
+  font-family: 'Roboto', sans-serif; }
+
+.container {
+  max-width: 1460px;
+  width: 100%;
+  padding-right: 40px;
+  padding-left: 40px;
+  margin: 0 auto; }
+
+#myTab {
+  border: none; }
+
+.nav-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.text-menu {
+  margin: 50px 0 0 -50px; }
+  .text-menu nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .text-menu nav ul li {
+      list-style-type: none;
+      padding-left: 10px; }
+      .text-menu nav ul li a {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+        text-decoration: none; }
+    .text-menu nav ul li:last-child a {
+      color: #3EB83D; }
+      .text-menu nav ul li:last-child a:hover {
+        color: #000000; }
+
+.progress-info {
+  margin-top: 20px; }
+
+.contact-info {
+  margin-top: 65px; }
+  .contact-info h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #2E2E32; }
+  .contact-info p {
+    width: 840px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #8B8B8B; }
+
+.personal-info {
+  margin-top: 30px; }
+  .personal-info .name-info {
+    padding-right: 80px; }
+    .personal-info .name-info label {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      color: #000000; }
+      .personal-info .name-info label span {
+        color: crimson; }
+    .personal-info .name-info input:focus {
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+  .personal-info .phone-info {
+    padding-right: 60px;
+    padding-left: 30px; }
+    .personal-info .phone-info label {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      color: #000000; }
+      .personal-info .phone-info label span {
+        color: crimson; }
+    .personal-info .phone-info input:focus {
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+  .personal-info .email-info {
+    padding-right: 0;
+    padding-left: 50px; }
+    .personal-info .email-info label {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      color: #000000; }
+    .personal-info .email-info input:focus {
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+
+.quick-buy {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin-top: 25px;
+  margin-bottom: 25px; }
+  .quick-buy .btn-buy {
+    background: #EABF49;
+    width: 250px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+    .quick-buy .btn-buy p {
+      width: 130px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #353535;
+      margin: 10px 55px; }
+    .quick-buy .btn-buy:hover {
+      background: #3EB83D;
+      border: none;
+      -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25); }
+      .quick-buy .btn-buy:hover p {
+        color: #FFFFFF; }
+    .quick-buy .btn-buy:active {
+      background: #215026;
+      border: none; }
+      .quick-buy .btn-buy:active p {
+        color: #FFFFFF; }
+
+.order-choice h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2E2E32; }
+
+.order-choice p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  width: 853px;
+  color: #8B8B8B; }
+
+#courier-tab {
+  width: 333px;
+  height: 90px;
+  border: 2px solid rgba(200, 194, 194, 0.81);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 5px; }
+  #courier-tab h5 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 20px 0 0 40px;
+    color: #000000; }
+  #courier-tab img {
+    display: none; }
+  #courier-tab p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 5px 0 0 40px;
+    color: #8B8B8B; }
+  #courier-tab .price {
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+    margin: -60px 260px;
+    position: absolute; }
+  #courier-tab img {
+    position: absolute;
+    margin: 25px 0 0 0; }
+  #courier-tab:hover {
+    border: 2px solid #3EB83D;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+
+#myTab .nav-item .active {
+  border: 2px solid #3EB83D;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  #myTab .nav-item .active img {
+    display: block; }
+  #myTab .nav-item .active p {
+    color: #3645CE; }
+
+.courier-info {
+  margin-top: 40px; }
+  .courier-info .courier-adress label {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000; }
+  .courier-info .courier-adress input {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(139, 139, 139, 0.59); }
+  .courier-info .courier-adress p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #8B8B8B; }
+  .courier-info .courier-flat {
+    margin-right: 95px; }
+    .courier-info .courier-flat label {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      /* identical to box height */
+      color: #000000; }
+    .courier-info .courier-flat input {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      color: rgba(139, 139, 139, 0.65); }
+  .courier-info .courier-date label,
+  .courier-info .courier-time label {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000; }
+  .courier-info .courier-date input,
+  .courier-info .courier-time input {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #9B9A9A; }
+  .courier-info .courier-comment {
+    width: 646px;
+    height: 105px; }
+
+#point-tab {
+  width: 333px;
+  height: 90px;
+  border: 2px solid rgba(200, 194, 194, 0.81);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-left: 50px; }
+  #point-tab img {
+    display: none; }
+  #point-tab h5 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 20px 0 0 40px;
+    color: #000000; }
+  #point-tab p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 5px 0 0 40px;
+    color: #8B8B8B; }
+  #point-tab .point-price {
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+    margin: -63px 230px;
+    position: absolute;
+    width: 77px;
+    text-align: right; }
+  #point-tab .point-img {
+    position: absolute;
+    margin: 25px 0 0 0; }
+  #point-tab:hover {
+    border: 2px solid #3EB83D;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+
+#pickup-tab {
+  width: 333px;
+  height: 90px;
+  border: 2px solid rgba(200, 194, 194, 0.81);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-left: 50px;
+  margin-right: -16px; }
+  #pickup-tab img {
+    display: none; }
+  #pickup-tab h5 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 20px 0 0 40px;
+    color: #000000; }
+  #pickup-tab p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 5px 0 0 40px;
+    color: #8B8B8B; }
+  #pickup-tab .pickup-price {
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+    margin: -64px 165px;
+    position: absolute;
+    width: 140px;
+    text-align: right; }
+  #pickup-tab .pickup-img {
+    position: absolute;
+    margin: 25px 0 0 0; }
+  #pickup-tab:hover {
+    border: 2px solid #3EB83D;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+
+#point .point-h {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 35px; }
+  #point .point-h h4 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000; }
+  #point .point-h h4:first-child {
+    margin-right: 450px; }
+
+#point .delivery-map {
+  margin-top: 35px; }
+
+#point .point-adress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 633px;
+  position: absolute;
+  margin: -352px 0 0 760px;
+  height: 343px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 5px; }
+  #point .point-adress .point-list {
+    margin: 5px 0 0 -25px;
+    text-decoration: none;
+    list-style-type: none; }
+    #point .point-adress .point-list li {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      color: #000000;
+      padding-top: 15px; }
+
+#point .text-list {
+  margin: 3px 0 0 0;
+  width: 450px;
+  text-decoration: none;
+  list-style-type: none; }
+  #point .text-list li {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    width: 395px;
+    color: #8B8B8B;
+    padding-top: 18px; }
+
+#pickup {
+  margin-top: 40px; }
+  #pickup .pickup-date label {
+    margin-left: -15px;
+    width: 322px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 15px;
+    color: #000000; }
+  #pickup .pickup-date input {
+    margin-left: -15px; }
+  #pickup .text-under-list {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #8B8B8B;
+    width: 622px;
+    position: absolute;
+    margin: -438px 0 0 760px; }
+  #pickup .point-adress {
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    width: 622px;
+    height: 343px;
+    position: absolute;
+    margin: -355px 0 0 760px; }
+    #pickup .point-adress .point-list {
+      margin: 25px 0 0 0px; }
+      #pickup .point-adress .point-list li {
+        text-decoration: none;
+        list-style-type: none; }
+      #pickup .point-adress .point-list li:first-child {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000; }
+      #pickup .point-adress .point-list li:last-child {
+        margin-top: 20px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+        width: 563px; }
+
+.long-buy {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin-top: 25px;
+  margin-bottom: 25px; }
+  .long-buy .btn-buy {
+    background: #EABF49;
+    width: 250px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+    .long-buy .btn-buy p {
+      width: 150px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #353535;
+      margin: 10px 45px; }
+    .long-buy .btn-buy:hover {
+      background: #3EB83D;
+      border: none;
+      -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25); }
+      .long-buy .btn-buy:hover p {
+        color: #FFFFFF; }
+    .long-buy .btn-buy:active {
+      background: #215026;
+      border: none; }
+      .long-buy .btn-buy:active p {
+        color: #FFFFFF; }

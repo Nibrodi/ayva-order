@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="../css/reset.css">-->
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <header></header>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-menu">
+          <nav>
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li><img src="img/arrow-menu.svg" alt="arrow"></li>
+              <li><a href="#">Ваша корзина</a></li>
+              <li><img src="img/arrow-menu.svg" alt="arrow"></li>
+              <li><a href="#">Оформление заказа</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="row progress-info">
+        <div class="col-12">
+          <img src="img/progress-bar.svg" alt="bar">
+        </div>
+      </div>
+      <div class="row contact-info">
+        <div class="col-12">
+          <h2>Введите контактные данные</h2>
+          <p>Вы можете завершить оформление заказа сразу после заполнения контактных данных. Менеджер свяжется с Вами
+            для уточнения способа получения заказа.</p>
+        </div>
+      </div>
+      <div class="row personal-info">
+        <div class="col-4 name-info"><label for="input-name">Имя<span>&#42;
+            </span></label><input type="text" class="form-control" id="input-name" placeholder="Введите ваше имя"
+            required="required"></div>
+        <div class="col-4 phone-info"><label for="phone">Телефон<span>&#42;
+            </span></label><input class="phone form-control" id="phone" type="text" placeholder="+7 (___)___-__-__"
+            required="required" /></div>
+        <div class="col-4 email-info"><label for="email">Электронная почта</label><input type="email"
+            class="form-control" id="email" placeholder="example@pochta.ru"></div>
+      </div>
+      <div class="row quick-buy"><button type="button" class="btn-buy">
+          <p>Быстрое оформление</p>
+        </button></div>
+      <div class="row order-choice">
+        <div class="col-12">
+          <h2>Выберите способ получения заказа</h2>
+          <p>Для уточнения стоимости доставки и других деталей заказа менеджер свяжется с Вами после завершения
+            оформления заказа.</p>
+        </div>
+      </div>
+      <div>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item"><a class="nav-link active" id="courier-tab" data-toggle="tab" href="#courier" role="tab"
+              aria-controls="courier" aria-selected="true"><img src="img/выбор.svg" alt="point">
+              <h5>Курьерская доставка </h5>
+              <p>Доставка по указанному адресу</p>
+              <p class="price">от 299 р. </p>
+            </a></li>
+          <li class="nav-item"><a class="nav-link" id="point-tab" data-toggle="tab" href="#point" role="tab"
+              aria-controls="point" aria-selected="false"><img class="point-img" src="img/выбор.svg" alt="point">
+              <h5>Пункты выдачи заказа</h5>
+              <p>Забрать в одном из пунктов выдачи</p>
+              <p class="point-price">6500 пунктов от 199 р.</p>
+            </a></li>
+          <li class="nav-item"><a class="nav-link" id="pickup-tab" data-toggle="tab" href="#pickup" role="tab"
+              aria-controls="pickup" aria-selected="false"><img class="pickup-img" src="img/выбор.svg" alt="pickup">
+              <h5>Самовывоз</h5>
+              <p>Забрать заказ в шоу-руме</p>
+              <p class="pickup-price">150м от <br>м. Ломоносовский пр-т <br>БЕСПЛАТНО</p>
+            </a></li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active courier-info" id="courier" role="tabpanel"
+            aria-labelledby="courier-tab">
+            <div class="row">
+              <div class="form-group col-5 courier-adress"><label for="inputAddress">Адрес</label><input type="text"
+                  class="form-control" id="inputAddress" placeholder="Москва, ул. Мира 122 к1">
+                <p>Населенный пункт,
+                  улица,
+                  дом</p>
+              </div>
+              <div class="form-group col-2 courier-flat"><label for="inputFlat">Квартира</label><input type="number"
+                  class="form-control" id="inputFlat" placeholder="177"></div>
+              <div class="form-group col-2 courier-date"><label for="inputDate">Дата доставки</label><input type="date"
+                  class="form-control" id="inputDate" placeholder="03.10.2019"></div>
+              <div class="form-group col-2 courier-time"><label for="inputTime">Время доставки</label><input type="text"
+                  class="form-control" id="inputTime" placeholder="10:00-17:00"></div>
+            </div>
+            <div class="form-group courier-comment"><label
+                for="exampleFormControlTextarea1">Комментарий</label><textarea class="form-control"
+                id="exampleFormControlTextarea1" rows="3" cols="1" placeholder="Ваш комментарий к заказу"></textarea>
+            </div>
+            <div class="row long-buy"><button type="button" class="btn-buy" data-toggle="button" aria-pressed="false"
+                autocomplete="off">
+                <p>Завершить оформление заказа</p>
+              </button></div>
+          </div>
+          <div class="tab-pane fade point-info" id="point" role="tabpanel" aria-labelledby="point-tab">
+            <div class="point-h">
+              <h4>Выберите на карте пункт выдачи заказов</h4>
+              <h4>Выбранный пункт выдачи заказов:</h4>
+            </div>
+            <div class="delivery-map">
+              <iframe src="https://yandex.ru/map-widget/v1/-/CGXuQE3c" width="577" height="343" frameborder="1"
+                allowfullscreen="true"></iframe>
+            </div>
+            <div class="point-adress">
+              <ul class="point-list">
+                <li>Адрес:</li>
+                <li>Время:</li>
+                <li>Способ оплаты:</li>
+                <li>Как добраться:</li>
+              </ul>
+              <ul class="text-list">
+                <li>Свердловский Заречная ул д.7</li>
+                <li>пн-пт: 10.00-20.00 сб: 11.00-18.00 вс: 11.00-15.00</li>
+                <li>наличные/картой</li>
+                <li>Остановка: "Заречная 3". Примерное расстояние от остановки до Отделения - 40 метров. 14-этажный
+                  жилой дом. Вход со
+                  стороны дороги, рядом с УК "Сантехмонтаж", от правого угла вторая дверь. 1 этаж. Тут может быть очень
+                  очень очень очень
+                  очень очень очень длинное описание маршрута</li>
+              </ul>
+            </div>
+            <div class="row long-buy"><button type="button" class="btn-buy" data-toggle="button" aria-pressed="false"
+                autocomplete="off">
+                <p>Завершить оформление заказа</p>
+              </button></div>
+          </div>
+          <div class="tab-pane fade" id="pickup" role="tabpanel" aria-labelledby="pickup-tab">
+            <div class="delivery-map">
+              <div class="form-group col-2 pickup-date"><label for="inputDate">Выберите удобную Вам дату
+                  самовывоза</label><input type="date" class="form-control" id="inputDate" placeholder="03.10.2019">
+              </div>
+              <iframe src="https://yandex.ru/map-widget/v1/-/CGXuQE3c" width="577" height="343" frameborder="1"
+                allowfullscreen="true"></iframe>
+            </div>
+            <div class="text-under-list">
+              <p>Самовывоз производится из Шоу-рума не раньше, чем на следующий день после оформления заказа, Вы сможете
+                ознакомиться с
+                товарами в заказе, а также выбрать другие товары находящиеся в Шоу-руме.</p>
+            </div>
+            <div class="point-adress">
+              <ul class="point-list">
+                <li>Шоу-рум в Москве</li>
+                <li>Шоу-рум находится в 150 метрах от метро Ломоносовский проспект, по адресу Ломоносовский проспект,
+                  дом 34, подъезд 1.
+                  Выход из первого вагона из центра. После выхода из стеклянных дверей, нужно повернуть направо. Выход
+                  из метро №4.
+                  <br><br>
+                  Выйдя из метро необходимо повернуть налево и пройти до пешеходного перехода. Перейдя пешеходный
+                  переход - двигаться
+                  прямо по Ломоносовскому проспекту. Наш шоу-рум расположен во втором доме по ходу движения.
+                  <br><br>
+                  Вход со двора, справа от подъезда №1 дверь с надписью "Детские игрушки".</li>
+              </ul>
+            </div>
+            <div class="row long-buy"><button type="button" class="btn-buy" data-toggle="button" aria-pressed="false"
+                autocomplete="off">
+                <p>Завершить оформление заказа</p>
+              </button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+  <script>
+    var phoneInput = document.querySelector('.phone') phoneInput.addEventListener('keydown', function (event) {
+        if (!(event.key == 'ArrowLeft' || event.key == 'ArrowRight' || event.key == 'Backspace' || event.key ==
+            'Tab')) {
+          event.preventDefault()
+        }
+
+        var mask = '+7 (111) 111-11-11'; // Задаем маску
+
+        if (/[0-9\+\ \-\(\)]/.test(event.key)) {
+          // Здесь начинаем сравнивать this.value и mask
+          // к примеру опять же
+          var currentString = this.value;
+          var currentLength = currentString.length;
+
+          if (/[0-9]/.test(event.key)) {
+            if (mask[currentLength] == '1') {
+              this.value = currentString + event.key;
+            } else {
+              for (var i = currentLength; i < mask.length; i++) {
+                if (mask[i] == '1') {
+                  this.value = currentString + event.key;
+                  break;
+                }
+
+                currentString += mask[i];
+              }
+            }
+          }
+        }
+      }
+
+    );
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
