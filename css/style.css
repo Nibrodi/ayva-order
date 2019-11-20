@@ -230,8 +230,8 @@ body {
     font-weight: normal;
     font-size: 14px;
     line-height: 16px;
-    margin-top: 8px;
-    color: #8B8B8B; }
+    margin-top: 10px;
+    color: #9B9A9A; }
   .courier-info .courier-flat {
     margin-right: 117px; }
     .courier-info .courier-flat label {
@@ -248,7 +248,7 @@ body {
       font-weight: normal;
       font-size: 14px;
       line-height: 16px;
-      color: rgba(139, 139, 139, 0.65); }
+      color: #9B9A9A; }
   .courier-info .courier-date,
   .courier-info .courier-time {
     padding-right: 0; }
@@ -279,6 +279,10 @@ body {
   .courier-info .courier-comment {
     width: 646px;
     height: 105px; }
+    .courier-info .courier-comment textarea {
+      font-size: 14px;
+      line-height: 16px;
+      color: #9B9A9A; }
 
 #point-tab {
   width: 333px;

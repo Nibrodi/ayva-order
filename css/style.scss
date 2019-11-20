@@ -316,8 +316,8 @@ body {
       font-weight: normal;
       font-size: 14px;
       line-height: 16px;
-      margin-top: 8px;
-      color: #8B8B8B;
+      margin-top: 10px;
+      color: #9B9A9A;
     }
   }
 
@@ -343,7 +343,7 @@ body {
       font-size: 14px;
       line-height: 16px;
 
-      color: rgba(139, 139, 139, 0.65);
+      color: #9B9A9A;
     }
   }
 
@@ -385,6 +385,13 @@ body {
   .courier-comment {
     width: 646px;
     height: 105px;
+
+    textarea {
+      font-size: 14px;
+      line-height: 16px;
+
+      color: #9B9A9A;
+    }
   }
 }
 
